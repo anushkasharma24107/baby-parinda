@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captivating Sign In</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        
+        <div id="login-view" class="view active">
+            <h2>Welcome Back</h2>
+            <p>Please sign in to continue</p>
+            <form id="login-form">
+                <div class="input-group">
+                    <input type="email" id="email" required placeholder=" ">
+                    <label for="email">Email address</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required placeholder=" ">
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+            </form>
+            <p class="error-msg" id="error-msg">Please fill in all fields.</p>
+        </div>
+
+        <div id="dashboard-view" class="view">
+            <h2>Hello, <span id="user-display">User</span>!</h2>
+            <p>You have successfully signed in.</p>
+            <button id="signout-btn" class="btn btn-outline">Sign Out</button>
+        </div>
+
+    </div>
+    <script src="index1.js"></script>
+</body>
+</html>
